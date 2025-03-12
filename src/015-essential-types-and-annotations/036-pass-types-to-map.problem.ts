@@ -1,6 +1,7 @@
 // CODE
+type User = {name: string; age: number}
 
-const userMap = new Map();
+const userMap = new Map<number, User>();
 
 // TESTS
 
@@ -11,4 +12,4 @@ userMap.set(2, { name: "Manuel", age: 31 });
 userMap.set("3", { name: "Anna", age: 29 });
 
 // @ts-expect-error
-userMap.set(3, "123");
+userMap.set(3, "123"); 

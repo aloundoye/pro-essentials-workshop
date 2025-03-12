@@ -5,4 +5,5 @@
     "*": false,
   },
   "explorer.sortOrder": "mixed",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 }

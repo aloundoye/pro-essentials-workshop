@@ -8,9 +8,9 @@ a.toString();
 // But not everything it warns you
 // about will fail at runtime
 
-const obj = {};
+let obj = {};
 
-obj.foo = "hello";
+obj.foo = 'hello';
 
 // It will try to warn you as close to
 // the source of the problem as possible
@@ -20,7 +20,7 @@ type MyUser = {
 };
 
 const user: MyUser = {
-  nme: "Katherine",
+  nme: 'Katherine',
 };
 
 // But sometimes that's not always possible
