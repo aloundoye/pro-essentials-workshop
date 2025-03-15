@@ -26,7 +26,7 @@ function getPermissions(role: UserRole): string[] {
       return ["create", "read", "update", "delete"];
     case "editor":
       return ["create", "read", "update"];
-    // case "viewer":
-    //   return ["read"];
+    case "viewer":
+      return ["read"];
   }
 }

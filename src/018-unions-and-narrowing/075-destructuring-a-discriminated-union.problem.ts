@@ -19,6 +19,7 @@ function calculateArea({ kind, radius, sideLength }: Shape) {
   } else {
     return sideLength * sideLength;
   }
+
 }
 
 it("Should calculate the area of a circle", () => {
