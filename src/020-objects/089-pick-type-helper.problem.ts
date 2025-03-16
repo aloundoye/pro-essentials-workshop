@@ -7,11 +7,13 @@ interface User {
   role: string;
 }
 
-const fetchUser = async (): Promise<User> => {
+type PickedUser = Pick<User, 'name' | 'email'>
+
+const fetchUser = async (): Promise<PickedUser> => {
   const response = await fetch("/api/user");
   const user = await response.json();
   return user;
-};
+}; 
 
 const example = async () => {
   const user = await fetchUser();

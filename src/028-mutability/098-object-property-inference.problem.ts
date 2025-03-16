@@ -4,8 +4,8 @@ type ButtonAttributes = {
 
 const modifyButton = (attributes: ButtonAttributes) => {};
 
-const buttonAttributes = {
-  type: "button",
+const buttonAttributes : ButtonAttributes = {
+  type  : "button",
 };
 
 modifyButton(buttonAttributes);
@@ -14,7 +14,7 @@ modifyButton(buttonAttributes);
 
 const modifyButtons = (attributes: ButtonAttributes[]) => {};
 
-const buttonsToChange = [
+const buttonsToChange: ButtonAttributes[] = [
   {
     type: "button",
   },

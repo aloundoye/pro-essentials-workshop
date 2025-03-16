@@ -1,6 +1,10 @@
-interface Scores {}
+interface Scores {
+  [index: string]: number;
+  math: number;
+  english: number;
+}
 
-// @ts-expect-error science is missing!
+
 const scores: Scores = {
   math: 95,
   english: 90,
