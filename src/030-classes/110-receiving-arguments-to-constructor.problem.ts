@@ -1,8 +1,18 @@
 import { expect, it } from "vitest";
+import { number } from "zod";
 
+type Coord = {
+  x?: number;
+  y?: number;
+}
 class CanvasNode {
-  x = 0;
-  y = 0;
+  x: number;
+  y: number;
+
+  constructor({ x = 0, y = 0 }: Coord = {}) {
+    this.x = x;
+    this.y = y;
+  }
 
   move(x: number, y: number) {
     this.x = x;

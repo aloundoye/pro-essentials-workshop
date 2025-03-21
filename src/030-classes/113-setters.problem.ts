@@ -1,5 +1,4 @@
 import { expect, it } from "vitest";
-
 class CanvasNode {
   #x: number;
   #y: number;
@@ -14,6 +13,11 @@ class CanvasNode {
       x: this.#x,
       y: this.#y,
     };
+  }
+
+  set position(position) {
+    this.#x = position.x;
+    this.#y = position.y;
   }
 
   move(x: number, y: number) {

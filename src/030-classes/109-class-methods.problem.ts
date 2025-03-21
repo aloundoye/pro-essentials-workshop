@@ -1,11 +1,16 @@
-import { expect, it } from "vitest";
+import { expect, it } from 'vitest';
 
 class CanvasNode {
   x = 0;
   y = 0;
+
+  move(x: number, y: number) {
+    this.x = x;
+    this.y = y;
+  }
 }
 
-it("Should be able to move", () => {
+it('Should be able to move', () => {
   const canvasNode = new CanvasNode();
 
   expect(canvasNode.x).toEqual(0);
