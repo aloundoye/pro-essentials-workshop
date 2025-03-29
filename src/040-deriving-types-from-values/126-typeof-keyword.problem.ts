@@ -14,8 +14,9 @@ const configurations = {
     timeout: 8000,
   },
 };
+type Configuration = typeof configurations;
 
-type Environment = "development" | "production" | "staging";
+type Environment = keyof Configuration;
 
 type test = Expect<
   Equal<Environment, "development" | "production" | "staging">
